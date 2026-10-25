@@ -1,85 +1,71 @@
-# Harsh Garg — Developer Portfolio
+# Harsh Garg — DevFest Portfolio
 
-> Curious about code. Driven to create.
+A responsive personal developer portfolio created for the GDG Gurugram DevFest volunteer application. Built with plain HTML, CSS, and JavaScript — no build step required.
 
-A personal portfolio showcasing my journey as a Computer Science student, the projects I build, the technologies I'm exploring, and my interest in developer communities.
+## Features
 
-## 🌐 Live Website
+- Bold editorial typography with warm ivory, burnt orange, and lilac accents
+- Responsive desktop, tablet, and mobile layouts
+- Animated ticker, rotating orbit detail, and scroll-reveal transitions
+- Mobile navigation
+- About, skills, projects (JevQL, ReVeil, StudyBuddy AI), community, and contact sections
+- Reduced-motion support and basic accessibility considerations
+- No external JavaScript dependencies
 
-**[Visit My Portfolio](YOUR_VERCEL_URL_HERE)**
+## Run locally
 
-## 👋 About Me
+1. Extract the ZIP.
+2. Open `index.html` in a browser, or use VS Code's Live Server extension.
+3. Check the profile links and update any details before publishing.
 
-Hi, I'm **Harsh Garg**, a Computer Science Engineering student at Rayat Bahra University. I enjoy turning ideas into working projects, exploring new technologies, and learning by building.
+## Personalize before deploying
 
-I'm interested in software development, AI-powered applications, full-stack development, and contributing to tech communities.
+Open `index.html` and:
+- Your profile photo is stored at `assets/harsh-garg.jpg`; replace it with a new photo at the same path if you want to update it.
+- Your contact email is set to `harshji93061@gmail.com`.
+- Replace the GitHub profile links in each project card with direct repository URLs when available.
+- Review all project descriptions and skill tags to ensure they accurately represent your current work.
 
-## 🚀 Featured Projects
+The uploaded profile photo is already wired into the hero section at `assets/harsh-garg.jpg`.
 
-### 1. JevQL — Natural-Language PostgreSQL Search
-Exploring a more approachable way to query PostgreSQL using natural-language questions, with generated SQL available for inspection.
+## Deploy to Vercel
 
-**Technologies:** PostgreSQL, pg_jev, Python, LLMs
+### Option A — GitHub (recommended)
+1. Create a new repository on GitHub, for example `devfest-portfolio`.
+2. Upload `index.html`, `style.css`, `script.js`, and `README.md` to the repository root.
+3. Sign in at [Vercel](https://vercel.com/) using GitHub.
+4. Select **Add New → Project**, then import your `devfest-portfolio` repository.
+5. Framework preset: **Other**. Build command: leave blank. Output directory: leave blank or use `.` if required by the dashboard.
+6. Click **Deploy**. Vercel will provide a public URL such as `devfest-portfolio-yourname.vercel.app`.
+7. Open the URL on your phone and desktop to test it. Submit that live URL in the GDG Gurugram volunteer form.
 
-### 2. ReVeil — AI-Powered Privacy Risk Analyzer
-A privacy analysis project exploring how direct identifiers can be removed while contextual clues may still reveal sensitive information. It uses a local AI model to investigate residual privacy risks.
+### Option B — Vercel CLI
+Install Node.js first, then run in the project folder:
+```bash
+npm install -g vercel
+vercel
+```
+Follow the prompts. To publish a production deployment:
+```bash
+vercel --prod
+```
 
-**Technologies:** Python, FastAPI, Ollama, Qwen3
+## Suggested form submission
 
-### 3. StudyBuddy AI — AI Study Companion
-A student-focused application concept combining an AI assistant, study planner, and progress tracking to support more organized learning.
+Paste your live Vercel URL into the **Portfolio / GitHub / Behance / Instagram Profile** field. You can also share your GitHub profile directly: https://github.com/vortex-001
 
-**Technologies:** Flutter, Dart, Gemini API
+## Notes
 
-## 🛠️ Tech Stack
+- The contact email is set to `harshji93061@gmail.com`.
+- Project cards currently link to the GitHub profile because individual repository URLs were not supplied.
+- Do not claim a project is production-ready unless that matches its current status.
 
-- **Languages:** C, C++, Java, Python, JavaScript
-- **Web:** HTML, CSS, Node.js, Express
-- **Database:** MongoDB, PostgreSQL
-- **Mobile:** Flutter, Dart
-- **AI & Backend:** FastAPI, Ollama, LLM integrations
-- **Tools:** Git, GitHub, VS Code, Vercel
 
-## 🤝 Community
+## Project UI preview images
 
-I enjoy learning with other developers, collaborating on projects, and participating in technology events.
+The `assets/jevql-ui.svg`, `assets/reveil-ui.svg`, and `assets/studybuddy-ui.svg` files are crisp, scalable interface mockups used in the project cards. They are illustrative previews, not screenshots from live deployed applications. Replace them with real screenshots when you have them.
 
-- CNCG Chandigarh Meetup — Sustainability Edition
-- Hackathons and collaborative project development
 
-## ✨ Portfolio Features
-
-- Personal introduction and profile photo
-- Responsive layout for desktop and mobile
-- Selected project showcases with UI previews
-- Skills and community sections
-- GitHub, LinkedIn, and email links
-- Lightweight HTML, CSS, and JavaScript implementation
-
-## 💻 Run Locally
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/vortex-001/devfest-portfolio.git
-   ```
-
-2. Open the project folder:
-
-   ```bash
-   cd devfest-portfolio
-   ```
-
-3. Open `index.html` in your browser, or use the VS Code Live Server extension.
-
-No build step is required.
-
-## 📬 Connect With Me
-
-- **GitHub:** [@vortex-001](https://github.com/vortex-001)
-- **LinkedIn:** [Harsh Garg](https://www.linkedin.com/in/harsh-garg-vortex001/)
-- **Email:** [harshji93061@gmail.com](mailto:harshji93061@gmail.com)
-
----
-
-Built with curiosity, consistency, and a willingness to learn.
+## Header and scrolling update
+- Added GitHub and LinkedIn icons to the header, linking to the supplied profiles.
+- Clipped horizontal overflow to prevent the bottom horizontal scrollbar while keeping vertical scrolling enabled.
